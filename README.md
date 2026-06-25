@@ -1,5 +1,16 @@
 ﻿---
 title: YOLO Object Detection
+emoji: U+1F3AF
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+---
+
+---
+title: YOLO Object Detection
 emoji: 🎯
 colorFrom: indigo
 colorTo: purple
@@ -378,4 +389,5 @@ Real-time object detection web app using YOLOv8 + OpenCV + Streamlit â€”
 supports webcam, image & video inputs with analytics dashboard.
 Deployed on Hugging Face Spaces.
 ```
+
 
