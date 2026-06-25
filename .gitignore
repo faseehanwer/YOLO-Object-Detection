@@ -1,0 +1,93 @@
+# ══════════════════════════════════════════════════════════════
+# .gitignore — YOLOv8 Object Detection System
+# ══════════════════════════════════════════════════════════════
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# ── Virtual environments ──────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# ── Distribution / packaging ──────────────────────────────────
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+site-packages/
+
+# ── Testing ───────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+*.coverage
+coverage.xml
+
+# ── IDE / Editor ──────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── YOLOv8 / ML artefacts ────────────────────────────────────
+# Exclude downloaded model weights (let Ultralytics download on first run)
+models/*.pt
+models/*.onnx
+models/*.tflite
+runs/
+
+# ── Upload / output artefacts ─────────────────────────────────
+# User data — never commit uploaded or processed media files
+uploads/*
+outputs/*
+
+# Keep directory placeholders tracked by git
+!uploads/.gitkeep
+!outputs/.gitkeep
+!models/.gitkeep
+!assets/.gitkeep
+
+# ── Streamlit ─────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── Secrets / credentials ────────────────────────────────────
+.env
+.env.local
+.env.production
+*.pem
+*.key
+secrets.toml
+
+# ── Logs ──────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+yolov8n.pt
+*.pt
+*.onnx

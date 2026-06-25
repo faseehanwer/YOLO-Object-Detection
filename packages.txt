@@ -1,0 +1,13 @@
+# packages.txt
+# ════════════════════════════════════════════════════════════════
+# System-level APT packages for Hugging Face Spaces (Ubuntu 22.04)
+# These are required by OpenCV headless for font rendering and
+# shared libraries that Python wheels link against at runtime.
+# ════════════════════════════════════════════════════════════════
+
+libglib2.0-0
+libsm6
+libxrender1
+libxext6
+libgl1-mesa-glx
+libglib2.0-dev

@@ -1,0 +1,36 @@
+# ══════════════════════════════════════════════════════════════════════
+# YOLOv8 Object Detection System — Python Dependencies
+# ══════════════════════════════════════════════════════════════════════
+# Compatible with:
+#   • Python 3.11+
+#   • Hugging Face Spaces (Streamlit SDK)
+#   • Streamlit Community Cloud
+#   • Local development (Windows / macOS / Linux)
+#
+# Install:
+#   pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════════
+
+# ── Core AI / Computer Vision ──────────────────────────────────────────────
+# Ultralytics bundles PyTorch, torchvision, and the full YOLOv8 suite.
+ultralytics>=8.2.0
+
+# Headless OpenCV — no GUI/display dependencies (required for cloud servers)
+opencv-python-headless>=4.9.0.80
+
+# Numerical computing
+numpy>=1.26.0
+
+# ── Web Application Framework ──────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── Data Processing ────────────────────────────────────────────────────────
+pandas>=2.2.0
+Pillow>=10.3.0
+
+# ── Visualization ──────────────────────────────────────────────────────────
+plotly>=5.22.0
+matplotlib>=3.8.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+python-dotenv>=1.0.1        # .env file support for local secrets management
