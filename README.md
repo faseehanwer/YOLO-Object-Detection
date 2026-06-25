@@ -1,4 +1,15 @@
-# 🎯 YOLOv8 Real-Time Object Detection System
+﻿---
+title: YOLO Object Detection
+emoji: 🎯
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+---
+
+# ðŸŽ¯ YOLOv8 Real-Time Object Detection System
 
 <div align="center">
 
@@ -9,15 +20,15 @@
 ![License](https://img.shields.io/badge/License-MIT-22D3EE?style=for-the-badge)
 
 **A production-ready, publicly deployable AI web application for real-time object detection.**  
-Powered by Ultralytics YOLOv8 · OpenCV · Streamlit · COCO Dataset (80 classes)
+Powered by Ultralytics YOLOv8 Â· OpenCV Â· Streamlit Â· COCO Dataset (80 classes)
 
-[🤗 Live Demo on HF Spaces](#) &nbsp;·&nbsp; [📂 GitHub Repository](#) &nbsp;·&nbsp; [🐛 Report a Bug](#)
+[ðŸ¤— Live Demo on HF Spaces](#) &nbsp;Â·&nbsp; [ðŸ“‚ GitHub Repository](#) &nbsp;Â·&nbsp; [ðŸ› Report a Bug](#)
 
 </div>
 
 ---
 
-## 📸 Screenshots
+## ðŸ“¸ Screenshots
 
 | Image Detection | Video Processing | Analytics Dashboard |
 |:---:|:---:|:---:|
@@ -27,11 +38,11 @@ Powered by Ultralytics YOLOv8 · OpenCV · Streamlit · COCO Dataset (80 classes
 
 ---
 
-## 📌 Project Overview
+## ðŸ“Œ Project Overview
 
 ### What It Does
 
-This project is an end-to-end AI web application that performs **real-time object detection** using **YOLOv8**, one of the most powerful and widely adopted computer-vision models in production today. Users can detect objects across three input modes — webcam snapshots, uploaded images, and uploaded videos — all through a polished browser-based dashboard with live analytics.
+This project is an end-to-end AI web application that performs **real-time object detection** using **YOLOv8**, one of the most powerful and widely adopted computer-vision models in production today. Users can detect objects across three input modes â€” webcam snapshots, uploaded images, and uploaded videos â€” all through a polished browser-based dashboard with live analytics.
 
 ### Why It Was Built
 
@@ -57,77 +68,77 @@ This project was designed to demonstrate **production-level computer vision engi
 
 ---
 
-## ✨ Features
+## âœ¨ Features
 
 ### Core Detection Capabilities
 
-- **Real-Time Object Detection** — YOLOv8 inference with sub-100ms latency on CPU for the Nano model
-- **Webcam Snapshot Mode** — Capture frames directly from any browser-accessible camera (desktop or mobile)
-- **Image Upload Mode** — Detect objects in any JPG / PNG / BMP / WEBP image; original vs result shown side by side
-- **Video Upload Mode** — Frame-by-frame video processing with live preview and progress bar (MP4, AVI, MOV, MKV)
-- **5 Model Variants** — YOLOv8n / s / m / l / x — trade speed for accuracy via a single dropdown
-- **80 COCO Classes** — people, vehicles, animals, furniture, food, electronics, and more
-- **Adjustable Thresholds** — Confidence and IoU (NMS) sliders for precision tuning
+- **Real-Time Object Detection** â€” YOLOv8 inference with sub-100ms latency on CPU for the Nano model
+- **Webcam Snapshot Mode** â€” Capture frames directly from any browser-accessible camera (desktop or mobile)
+- **Image Upload Mode** â€” Detect objects in any JPG / PNG / BMP / WEBP image; original vs result shown side by side
+- **Video Upload Mode** â€” Frame-by-frame video processing with live preview and progress bar (MP4, AVI, MOV, MKV)
+- **5 Model Variants** â€” YOLOv8n / s / m / l / x â€” trade speed for accuracy via a single dropdown
+- **80 COCO Classes** â€” people, vehicles, animals, furniture, food, electronics, and more
+- **Adjustable Thresholds** â€” Confidence and IoU (NMS) sliders for precision tuning
 
 ### Visualisation & Annotation
 
-- **Colour-Coded Bounding Boxes** — Each COCO class gets a unique HSV-derived colour, consistent across all frames
-- **Rounded-Corner Boxes** — Modern UI aesthetic instead of standard rectangle outlines
-- **Corner Accent Marks** — Military HUD–style tick marks at box corners
-- **Semi-Transparent Fill** — Subtle alpha-blended interior highlight for each detection
-- **Class + Confidence Labels** — Auto-contrast badge (white/black text) over the class colour background
-- **Watermark Overlay** — YOLOv8 + detection count stamped on every output frame
+- **Colour-Coded Bounding Boxes** â€” Each COCO class gets a unique HSV-derived colour, consistent across all frames
+- **Rounded-Corner Boxes** â€” Modern UI aesthetic instead of standard rectangle outlines
+- **Corner Accent Marks** â€” Military HUDâ€“style tick marks at box corners
+- **Semi-Transparent Fill** â€” Subtle alpha-blended interior highlight for each detection
+- **Class + Confidence Labels** â€” Auto-contrast badge (white/black text) over the class colour background
+- **Watermark Overlay** â€” YOLOv8 + detection count stamped on every output frame
 
 ### Analytics Dashboard
 
-- **KPI Cards** — Total objects, unique classes, average confidence, inference time
-- **Interactive Bar Chart** — Objects detected per class (Plotly, dark theme)
-- **Confidence Histogram** — Score distribution with mean-confidence marker
-- **Detection Timeline** — Detections per frame over time (video mode only)
-- **Sortable Summary Table** — Class, count, avg confidence, max confidence with progress bars
-- **Class Badges** — Visual pill-badges listing all detected object categories
+- **KPI Cards** â€” Total objects, unique classes, average confidence, inference time
+- **Interactive Bar Chart** â€” Objects detected per class (Plotly, dark theme)
+- **Confidence Histogram** â€” Score distribution with mean-confidence marker
+- **Detection Timeline** â€” Detections per frame over time (video mode only)
+- **Sortable Summary Table** â€” Class, count, avg confidence, max confidence with progress bars
+- **Class Badges** â€” Visual pill-badges listing all detected object categories
 
 ### Output & Export
 
-- **Download Annotated Image** — One-click JPEG download of the processed result
-- **Download Processed Video** — Download the fully annotated MP4 output file
-- **Variable Frame Sampling** — Control how many frames to process in video mode (speed vs detail)
+- **Download Annotated Image** â€” One-click JPEG download of the processed result
+- **Download Processed Video** â€” Download the fully annotated MP4 output file
+- **Variable Frame Sampling** â€” Control how many frames to process in video mode (speed vs detail)
 
 ---
 
-## 🗂️ Project Structure
+## ðŸ—‚ï¸ Project Structure
 
 ```
 YOLO-Object-Detection/
-│
-├── app.py                  # ← Main Streamlit application (entry point)
-├── requirements.txt        # Python dependencies
-├── packages.txt            # System-level APT packages (Hugging Face Spaces)
-├── README.md               # This file
-├── .gitignore              # Git exclusions
-│
-├── utils/
-│   ├── __init__.py         # Package init; public exports
-│   ├── detector.py         # YOLOv8 model loader + inference engine
-│   ├── visualization.py    # Bounding box drawing + detection summary
-│   └── analytics.py        # Statistics computation + Plotly chart builders
-│
-├── models/                 # Auto-downloaded YOLOv8 .pt weights (git-ignored)
-├── uploads/                # Temporary input files (git-ignored)
-├── outputs/                # Processed images/videos for download (git-ignored)
-└── assets/                 # Static files: screenshots, demo GIFs
+â”‚
+â”œâ”€â”€ app.py                  # â† Main Streamlit application (entry point)
+â”œâ”€â”€ requirements.txt        # Python dependencies
+â”œâ”€â”€ packages.txt            # System-level APT packages (Hugging Face Spaces)
+â”œâ”€â”€ README.md               # This file
+â”œâ”€â”€ .gitignore              # Git exclusions
+â”‚
+â”œâ”€â”€ utils/
+â”‚   â”œâ”€â”€ __init__.py         # Package init; public exports
+â”‚   â”œâ”€â”€ detector.py         # YOLOv8 model loader + inference engine
+â”‚   â”œâ”€â”€ visualization.py    # Bounding box drawing + detection summary
+â”‚   â””â”€â”€ analytics.py        # Statistics computation + Plotly chart builders
+â”‚
+â”œâ”€â”€ models/                 # Auto-downloaded YOLOv8 .pt weights (git-ignored)
+â”œâ”€â”€ uploads/                # Temporary input files (git-ignored)
+â”œâ”€â”€ outputs/                # Processed images/videos for download (git-ignored)
+â””â”€â”€ assets/                 # Static files: screenshots, demo GIFs
 ```
 
 ---
 
-## ⚡ Quick Start (Local)
+## âš¡ Quick Start (Local)
 
 ### Prerequisites
 
 - Python **3.11** or higher
 - pip / conda
 - Webcam (optional, for webcam mode)
-- GPU (optional — CUDA accelerates inference but is not required)
+- GPU (optional â€” CUDA accelerates inference but is not required)
 
 ### Installation
 
@@ -156,7 +167,7 @@ The app opens at **http://localhost:8501** in your default browser.
 
 ---
 
-## 🚀 Deployment
+## ðŸš€ Deployment
 
 ### GitHub
 
@@ -188,19 +199,19 @@ git push
 
 ### Hugging Face Spaces
 
-Hugging Face Spaces provides **free GPU-optional Streamlit hosting** with a public URL — ideal for portfolio demos.
+Hugging Face Spaces provides **free GPU-optional Streamlit hosting** with a public URL â€” ideal for portfolio demos.
 
-#### Step 1 — Create a Space
+#### Step 1 â€” Create a Space
 
-1. Log in at [huggingface.co](https://huggingface.co) and go to **Spaces → Create new Space**
-2. Set **Space name** → `yolo-object-detection`
-3. **SDK** → `Streamlit`
-4. **Visibility** → `Public`
+1. Log in at [huggingface.co](https://huggingface.co) and go to **Spaces â†’ Create new Space**
+2. Set **Space name** â†’ `yolo-object-detection`
+3. **SDK** â†’ `Streamlit`
+4. **Visibility** â†’ `Public`
 5. Click **Create Space**
 
-#### Step 2 — Upload your project
+#### Step 2 â€” Upload your project
 
-**Option A — Git push (recommended):**
+**Option A â€” Git push (recommended):**
 
 ```bash
 # Add HF Spaces as a second remote
@@ -210,34 +221,34 @@ git remote add hf https://huggingface.co/spaces/YOUR_HF_USERNAME/yolo-object-det
 git push hf main
 ```
 
-**Option B — Web UI upload:**
+**Option B â€” Web UI upload:**
 
 Upload all project files via the **Files** tab in your Space settings.  
 Ensure `app.py`, `requirements.txt`, and `packages.txt` are at the **root** of the Space.
 
-#### Step 3 — Configure the Space
+#### Step 3 â€” Configure the Space
 
 Hugging Face will automatically:
-1. Detect `packages.txt` → install APT system packages
-2. Detect `requirements.txt` → install Python packages
+1. Detect `packages.txt` â†’ install APT system packages
+2. Detect `requirements.txt` â†’ install Python packages
 3. Start the app with `streamlit run app.py`
 
-#### Step 4 — Get your public URL
+#### Step 4 â€” Get your public URL
 
-Once the build completes (3–5 minutes), your app is live at:
+Once the build completes (3â€“5 minutes), your app is live at:
 ```
 https://YOUR_HF_USERNAME-yolo-object-detection.hf.space
 ```
 
-#### Optional — Hardware upgrade
+#### Optional â€” Hardware upgrade
 
-For faster inference, upgrade to a **GPU Space** in Space Settings → Hardware:
-- Free T4 GPU → 10× faster inference vs CPU
-- YOLOv8n on T4 → ~5ms/frame (200 FPS capable)
+For faster inference, upgrade to a **GPU Space** in Space Settings â†’ Hardware:
+- Free T4 GPU â†’ 10Ã— faster inference vs CPU
+- YOLOv8n on T4 â†’ ~5ms/frame (200 FPS capable)
 
 ---
 
-## 🤖 Model Comparison
+## ðŸ¤– Model Comparison
 
 | Model | Size | mAP50-95 | Speed (CPU) | Best For |
 |:---:|:---:|:---:|:---:|:---:|
@@ -251,7 +262,7 @@ For faster inference, upgrade to a **GPU Space** in Space Settings → Hardware:
 
 ---
 
-## 🏷️ COCO Classes (80)
+## ðŸ·ï¸ COCO Classes (80)
 
 The model detects all 80 standard COCO object categories:
 
@@ -266,22 +277,22 @@ The model detects all 80 standard COCO object categories:
 
 ---
 
-## 🔮 Future Improvements
+## ðŸ”® Future Improvements
 
-- **Multi-Camera Support** — Switch between multiple connected cameras at runtime using `streamlit-webrtc`
-- **Object Tracking** — Cross-frame tracking with ByteTrack / DeepSORT (unique IDs per object)
-- **Custom Model Training** — UI for uploading labelled datasets and fine-tuning on custom classes
-- **Live RTSP Stream** — Connect to IP cameras and NVR systems via RTSP URL input
-- **REST API Backend** — FastAPI endpoint for programmatic inference integration
-- **Batch Processing** — Upload multiple images as a ZIP for batch detection
-- **Export to ONNX / TensorRT** — One-click model export for edge deployment optimisation
-- **Cloud Storage Integration** — Auto-save results to AWS S3 / Google Cloud Storage
-- **Detection Alerts** — Email / webhook notifications when specific classes are detected
-- **Performance Dashboard** — Historical detection logs with trend analytics
+- **Multi-Camera Support** â€” Switch between multiple connected cameras at runtime using `streamlit-webrtc`
+- **Object Tracking** â€” Cross-frame tracking with ByteTrack / DeepSORT (unique IDs per object)
+- **Custom Model Training** â€” UI for uploading labelled datasets and fine-tuning on custom classes
+- **Live RTSP Stream** â€” Connect to IP cameras and NVR systems via RTSP URL input
+- **REST API Backend** â€” FastAPI endpoint for programmatic inference integration
+- **Batch Processing** â€” Upload multiple images as a ZIP for batch detection
+- **Export to ONNX / TensorRT** â€” One-click model export for edge deployment optimisation
+- **Cloud Storage Integration** â€” Auto-save results to AWS S3 / Google Cloud Storage
+- **Detection Alerts** â€” Email / webhook notifications when specific classes are detected
+- **Performance Dashboard** â€” Historical detection logs with trend analytics
 
 ---
 
-## 📄 License
+## ðŸ“„ License
 
 Distributed under the **MIT License**. See `LICENSE` for details.
 
@@ -289,41 +300,41 @@ YOLOv8 is released under the [AGPL-3.0 license](https://github.com/ultralytics/u
 
 ---
 
-## 🙏 Acknowledgements
+## ðŸ™ Acknowledgements
 
-- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) — Model architecture and training pipeline
-- [Streamlit](https://streamlit.io) — Web application framework
-- [COCO Dataset](https://cocodataset.org) — Training dataset for object detection
-- [Plotly](https://plotly.com) — Interactive charting library
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) â€” Model architecture and training pipeline
+- [Streamlit](https://streamlit.io) â€” Web application framework
+- [COCO Dataset](https://cocodataset.org) â€” Training dataset for object detection
+- [Plotly](https://plotly.com) â€” Interactive charting library
 
 ---
 
 <div align="center">
 
-**⭐ If you found this project useful, please star the repository!**
+**â­ If you found this project useful, please star the repository!**
 
-Made with ❤️ as an AI/ML portfolio project
+Made with â¤ï¸ as an AI/ML portfolio project
 
 </div>
 
 ---
 
-## 💼 Portfolio Content
+## ðŸ’¼ Portfolio Content
 
-### ✅ Resume Bullet Points (ATS-Optimised)
+### âœ… Resume Bullet Points (ATS-Optimised)
 
 ```
-• Engineered a production-ready real-time object detection system using
+â€¢ Engineered a production-ready real-time object detection system using
   YOLOv8 and OpenCV, achieving sub-100ms inference latency on CPU across
   80 COCO object classes; deployed publicly on Hugging Face Spaces with a
   live demo URL.
 
-• Built a modular Python application (Streamlit dashboard) with three
-  detection modes — webcam snapshots, image uploads, and video processing —
+â€¢ Built a modular Python application (Streamlit dashboard) with three
+  detection modes â€” webcam snapshots, image uploads, and video processing â€”
   featuring bounding-box annotation, confidence score display, and an
   interactive analytics panel with Plotly visualisations.
 
-• Implemented an optimised inference pipeline using Ultralytics YOLOv8 with
+â€¢ Implemented an optimised inference pipeline using Ultralytics YOLOv8 with
   configurable confidence and IoU thresholds, frame-sampling for video
   throughput control, and Streamlit resource caching to eliminate redundant
   model reloads in a multi-user cloud deployment.
@@ -331,39 +342,40 @@ Made with ❤️ as an AI/ML portfolio project
 
 ---
 
-### 💼 LinkedIn Project Description
+### ðŸ’¼ LinkedIn Project Description
 
 ```
-🎯 YOLOv8 Real-Time Object Detection System
+ðŸŽ¯ YOLOv8 Real-Time Object Detection System
 
 Built and publicly deployed a full-stack AI computer vision application
 powered by Ultralytics YOLOv8 and Streamlit. The system detects 80 object
 categories in real time across webcam snapshots, uploaded images, and video
-files — achieving sub-100ms CPU inference with the Nano model variant.
+files â€” achieving sub-100ms CPU inference with the Nano model variant.
 
 Key highlights:
-▪ Modular Python architecture: detector, visualisation, and analytics
+â–ª Modular Python architecture: detector, visualisation, and analytics
   engines built as separate, reusable utility modules
-▪ Professional UI with colour-coded bounding boxes, rounded-corner
+â–ª Professional UI with colour-coded bounding boxes, rounded-corner
   overlays, confidence badges, and a dark-themed analytics dashboard
-▪ Interactive analytics: KPI cards, class distribution charts, confidence
+â–ª Interactive analytics: KPI cards, class distribution charts, confidence
   histograms, and detection timeline (video mode)
-▪ Cloud-deployed to Hugging Face Spaces with zero configuration required
-  from end users — just open the URL and detect
+â–ª Cloud-deployed to Hugging Face Spaces with zero configuration required
+  from end users â€” just open the URL and detect
 
-Tech: Python 3.11 · Ultralytics YOLOv8 · OpenCV · Streamlit · Plotly ·
-      NumPy · Pandas · Hugging Face Spaces
+Tech: Python 3.11 Â· Ultralytics YOLOv8 Â· OpenCV Â· Streamlit Â· Plotly Â·
+      NumPy Â· Pandas Â· Hugging Face Spaces
 
-🔗 Live Demo: https://huggingface.co/spaces/yourusername/yolo-detection
-📂 Source: https://github.com/yourusername/YOLO-Object-Detection
+ðŸ”— Live Demo: https://huggingface.co/spaces/yourusername/yolo-detection
+ðŸ“‚ Source: https://github.com/yourusername/YOLO-Object-Detection
 ```
 
 ---
 
-### 📋 GitHub Repository Description (One-Liner)
+### ðŸ“‹ GitHub Repository Description (One-Liner)
 
 ```
-Real-time object detection web app using YOLOv8 + OpenCV + Streamlit —
+Real-time object detection web app using YOLOv8 + OpenCV + Streamlit â€”
 supports webcam, image & video inputs with analytics dashboard.
 Deployed on Hugging Face Spaces.
 ```
+
