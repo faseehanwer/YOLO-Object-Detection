@@ -1,3 +1,14 @@
+---
+title: YOLO Object Detection
+emoji: 🎯
+colorFrom: indigo
+colorTo: purple
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+---
+
 ﻿---
 title: YOLO Object Detection
 emoji: U+1F3AF
