@@ -549,7 +549,7 @@ def run_image_mode(detector: ObjectDetector, cfg: dict) -> None:
         st.markdown(
             "<p class='section-label'>📥 Original</p>", unsafe_allow_html=True
         )
-        st.image(image_rgb, use_container_width=True, caption=uploaded.name)
+        st.image(image_rgb, use_column_width=True, caption=uploaded.name)
 
     # ── Run inference ──────────────────────────────────────────────────────
     with st.spinner("🔍  Running YOLOv8 inference …"):
@@ -573,7 +573,7 @@ def run_image_mode(detector: ObjectDetector, cfg: dict) -> None:
         )
         st.image(
             annotated_rgb,
-            use_container_width=True,
+            use_column_width=True,
             caption=f"{len(detections)} object(s) detected  ·  {inference_ms:.0f} ms",
         )
 
@@ -657,7 +657,7 @@ def run_webcam_mode(detector: ObjectDetector, cfg: dict) -> None:
     )
     st.image(
         annotated_rgb,
-        use_container_width=True,
+        use_column_width=True,
         caption=f"{len(detections)} object(s) found  ·  {inference_ms:.0f} ms",
     )
 
@@ -809,7 +809,7 @@ def run_video_mode(detector: ObjectDetector, cfg: dict) -> None:
                 # Live preview update (every processed frame)
                 frame_ph.image(
                     cv2.cvtColor(annotated, cv2.COLOR_BGR2RGB),
-                    use_container_width=True,
+                    use_column_width=True,
                     caption=f"Frame {frame_idx}/{total_frames}  ·  {len(dets)} objects",
                 )
 
